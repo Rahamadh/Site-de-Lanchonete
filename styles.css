@@ -1,87 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-image: url(/Img/capa.jpg);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 1000px;
 }
 
 header {
-    background-color: #FF0000; /* Vermelho */
-    color: #FFFF00; /* Amarelo */
-    text-align: center;
-    padding: 20px;
+  background-color: #ff0000; /* Vermelho */
+  color: #ffff00; /* Amarelo */
+  text-align: center;
+  padding: 20px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    display: inline-block;
-    margin:  10px;
-    height: 30px;
-    margin-left: 100px;
-    
+  display: inline-block;
+  margin: 0px;
+  height: 30px;
+  margin-left: 100px;
 }
 nav li a {
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    
-    padding: 0px;
-    margin: 100px;
-    font-size:  50px;
-    color: #FFFF00;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  padding: 50px;
+  margin: 0px;
+  font-size: 40px;
+  color: #ffff00;
+  display: inline block;
 }
 
-
-nav li a:hover{
-    color: white;
-    
+nav li a:hover {
+  color: white;
+  text-decoration: none;
 }
-
 
 .destaque {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-.lanche{
-    background-color: whitesmoke;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    border: black solid 1px;
-    border-radius: 5px;
-    
+.produtos {
+  margin: 0 px;
+  padding: 0px;
+}
+
+.lanche {
+  background-color: whitesmoke;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: black solid 1px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 .lanche img {
-    padding: 0;
-    margin:0 ;
-    width: 50PX;
-    
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  border-radius: 5px;
+}
+div button {
+  padding: 0px;
+  width: 100px;
+  margin-top: 20px;
+  z-index: 3;
+}
+.lanche :hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-
-
-.btn{
-    color: #FF0000;
-    width: 50px;
-    height: 50px;
-    padding: 50px;
+.descricao {
+  font-family: "Times New Roman", Times, serif;
+  display: inline-block;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
 }
 
-.produto img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.descricao{
-    display: none;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.produto:hover .descricao{
-    display: block;
+div .cardapioOpcao img {
+  width: 300px;
 }
