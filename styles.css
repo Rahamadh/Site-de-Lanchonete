@@ -1,46 +1,51 @@
 header {
   padding: 0;
   margin: 0;
-  height: 15px;
-
-  position: relative;
-
+  height: 60px;
   background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  background: black;
+  opacity: 0.9;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: -60px;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: black;
-  opacity: 0.7;
-  margin-left: 20px;
-  margin-right: 30%;
-  display: block;
 }
-li {
-  display: inline;
-}
-
-a {
-  display: inline-block;
-  padding: 15px;
+ul a {
+  float: left;
+  padding: 20px;
   font-size: 30px;
   color: yellow;
+  display: flex;
 }
+li {
+  margin: 0 15;
+}
+
 .nave :hover {
   color: white;
   text-decoration: none;
 }
 .btn-custom {
   margin: 10px;
-  display: inline-block;
+  background-color: yellow;
+  color: black;
   padding: 10px;
   float: right;
+  border-radius: 5px;
 }
 
 .btn-custom:hover {
   color: white;
   background-color: red;
-  border: none;
+  border-radius: 5px;
 }
