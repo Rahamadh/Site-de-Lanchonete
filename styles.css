@@ -1,3 +1,5 @@
+
+
 header {
   padding: 0;
   margin: 0;
@@ -7,6 +9,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
 nav {
   background: black;
   opacity: 0.9;
@@ -20,6 +23,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul a {
   float: left;
   padding: 20px;
@@ -27,14 +31,16 @@ ul a {
   color: yellow;
   display: flex;
 }
+
 li {
-  margin: 0 15;
+  margin: 0 15px; /* Corrija para 15px para manter consistência */
 }
 
-.nave :hover {
+.nave a:hover {
   color: white;
   text-decoration: none;
 }
+
 .btn-custom {
   margin: 10px;
   background-color: yellow;
@@ -42,11 +48,25 @@ li {
   padding: 10px;
   float: right;
   border-radius: 5px;
-  border:none;
+  border: none;
 }
 
 .btn-custom:hover {
   color: white;
   background-color: red;
   border-radius: 5px;
+}
+
+main {
+  margin-top:450px;; /* Adicione espaço suficiente para empurrar o conteúdo para baixo */
+  padding: 15px;
+
+}
+section{
+  display: inline-block;
+  margin: 10px;
+}
+.card
+{
+border-radius: 30px;
 }
