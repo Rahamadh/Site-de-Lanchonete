@@ -1,21 +1,29 @@
 
 
 header {
-  padding: 0;
-  margin: 0;
-  height: 60px;
-  background-attachment: fixed;
+  
+  margin:auto;
+  height: 70px;
+  
   display: flex;
-  justify-content: space-around;
+  justify-content:stretch;
   align-items: center;
+  
+}
+head a {
+  width: 100%;
+  background-size: cover;
 }
 
 nav {
-  background: black;
+  background: black linear-gradient(0.9);
   opacity: 0.9;
   margin-left: 140px;
   margin-right: 140px;
   margin-top: -60px;
+  background-size:auto;
+
+
 }
 
 ul {
@@ -29,11 +37,11 @@ ul a {
   padding: 20px;
   font-size: 30px;
   color: yellow;
-  display: flex;
+  display: flex; 
 }
 
 li {
-  margin: 0 15px; /* Corrija para 15px para manter consistência */
+  margin: 0 15px; 
 }
 
 .nave a:hover {
@@ -46,9 +54,9 @@ li {
   background-color: yellow;
   color: black;
   padding: 10px;
-  float: right;
   border-radius: 5px;
   border: none;
+  
 }
 
 .btn-custom:hover {
@@ -58,15 +66,42 @@ li {
 }
 
 main {
-  margin-top:450px;; /* Adicione espaço suficiente para empurrar o conteúdo para baixo */
+  margin-top:20%; /* Adicione espaço suficiente para empurrar o conteúdo para baixo */
   padding: 15px;
 
 }
 section{
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
 }
 .card
 {
+  justify-content: center;
+  align-content: center;
 border-radius: 30px;
+display:inline-block;
+}
+
+.card:hover{
+  background-color: rgba(0, 0, 0, 5);
+
+  color:white;
+
+  
+}
+aside{
+  background-color: yellow;
+  width: 400px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-bottom: 400px;
+  z-index: 5;
+  display: block;
+  margin-top:   -900px;
+  margin-left: 70%;
+}
+aside p {
+  font-size: 20px;
 }

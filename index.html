@@ -9,10 +9,23 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script>
+      let contador = 0; // Initialize contador
+
+      const botao = document.getElementById('addcar');
+      const carrinho = document.getElementById('carrinho');
+      const quantidade = document.getElementById('quantidade');
+
+      botao.addEventListener('click', () => {
+        carrinho.style.display = 'block';
+        contador++;
+        quantidade.textContent = contador;
+      });
+    </script>
   </head>
   <body>
     <header>
-      <a href="/index.html"><img src="/Img/capa2.jpg" alt="" /> </a>
+      <a href="/index.html"><img src="/Img/capa2.jpg" alt="" /></a>
     </header>
     <nav>
       <div>
@@ -21,66 +34,116 @@
           <li><a href="">New</a></li>
           <li><a href="">Contato</a></li>
           <li><a href="">Sobre</a></li>
-          <button class="btn-large btn-dander btn-custom">
-            Adcionar ao carrinho
-          </button>
+          <button class="btn-large  btn-custom" id="addcar">Adicionar ao Carrinho</button>
+          <div id="carrinho" style="display:none;"> Adcionar ao carrinho
+            <span id="quantidade">0</span>
+          </div>
         </ul>
       </div>
-    </nav>
+    </nav><br>
     <main>
       <section>
-        <div class="card" style="width: 300px" >
+        <div class="card" style="width: 300px">
           <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
-          <div class="card-body" >
-            <h4 class="card-title" >Lanche 1</h4>
-            <p class="card-text" >xLanche feito de pão caseiro, de carne bovina de 150g, molho especial 
-              alface, tomate e cebola roxa</p>
-            <a href="#"class="btn btn-danger">Adcionar ao carrinho</a>
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
           </div>
-          
+        </div>
+      </section>
+      
+      <section>
+        <div class="card" style="width: 300px">
+          <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <div class="card" style="width: 300px">
+          <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
+          </div>
         </div>
       </section>
       <section>
-        <div class="card" style="width: 300px" >
+        <div class="card" style="width: 300px">
           <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
-          <div class="card-body" >
-            <h4 class="card-title" >Lanche 1</h4>
-            <p class="card-text" >xLanche feito de pão caseiro, de carne bovina de 150g, molho especial 
-              alface, tomate e cebola roxa</p>
-            <a href="#"class="btn btn-danger">Adcionar ao carrinho</a>
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
           </div>
-          
-
+        </div>
+      </section><br>
+      <section>
+        <div class="card" style="width: 300px">
+          <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
+          </div>
+        </div>
+      </section>
+      <section><
+        <div class="card" style="width: 300px">
+          <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
+          </div>
         </div>
       </section>
       <section>
-        <div class="card" style="width: 300px" >
+        <div class="card" style="width: 300px">
           <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
-          <div class="card-body" >
-            <h4 class="card-title" >Lanche 1</h4>
-            <p class="card-text" >Lanche feito de pão caseiro, de carne bovina de 150g, molho especial 
-              alface, tomate e cebola roxa
-            </p>
-            <a href="#"class="btn btn-danger">Adcionar ao carrinho</a>
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
           </div>
-          
-
         </div>
       </section>
       <section>
-        <div class="card" style="width: 300px" >
+        <div class="card" style="width: 300px">
           <img class="card img-top" src="/Img/lanche2.jpg" alt="Card Image" style="width: 100%">
-          <div class="card-body" >
-            <h4 class="card-title" >Lanche 1</h4>
-            <p class="card-text" >Lanche feito de pão caseiro, de carne bovina de 150g, molho especial 
-              alface, tomate e cebola roxa</p>
-            <a href="#"class="btn btn-danger">Adcionar ao carrinho</a>
+          <div class="card-body">
+            <h4 class="card-title">Lanche 1</h4>
+            <p class="card-text">Lanche feito de pão caseiro, de carne bovina de 150g, molho especial, alface, tomate e cebola roxa</p>
+            <a href="#" class="btn btn-custom">Adcionar ao Carrinho</a>
           </div>
-          
-
         </div>
       </section>
-    </main>
+      </main>
+      <aside>
+        <h2>Descição</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur   <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+        </p>
+        <h2>Descição</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+        </p>
+        <h2>Descição</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quia pariatur  <br>
+        </p>
+
+      </aside>
+      
+
   </body>
 </html>
